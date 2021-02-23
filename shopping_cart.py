@@ -39,4 +39,16 @@ def to_usd(my_price):
 
 # TODO: write some Python code here to produce the desired output
 
-print(products)
+var = 1
+
+while True:
+    product_selected = input("Please input a product identifier, or 'DONE' if there are no more items")
+    if product_selected == "DONE":
+        break
+    else:
+        product_selected = [p for p in products if str(p["id"]) == str([product_selected])
+        product_found = product_found[0]
+
+
+    
+    
