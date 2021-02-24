@@ -1,5 +1,6 @@
 
 # SHOPPING CART APP 
+
 Some text from this file has been adapted from Professor Rossetti
 This is a Python application for generating receipts at Haley's grocery store.
 
@@ -36,9 +37,9 @@ pip install -r requirements.txt
 
 ## Setup
 
-In in the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify ______:
+In in the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify the tax rate:
 
-    USER_NAME="John Snow"
+    TAX_RATE=0.0875
 
 > NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [.gitignore](/.gitignore) file)
 
