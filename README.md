@@ -1,8 +1,7 @@
 
 # SHOPPING CART APP 
-# Some text from this file has been adapted from Professor Rossetti
-
-A Python application for generating receipts at Haley's grocery store.
+Some text from this file has been adapted from Professor Rossetti
+This is a Python application for generating receipts at Haley's grocery store.
 
 ## Prerequisites
 
