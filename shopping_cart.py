@@ -4,6 +4,11 @@
 import datetime
 now = datetime.datetime.now()
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -66,7 +71,7 @@ for selected_id in selected_ids:
     total_price = total_price + matching_product["price"]
     print("... "+matching_product["name"]+" "+ to_usd(matching_product["price"]))
     
-total_tax = total_price*.0875
+total_tax = total_price*(os.getenv("TAX_RATE"))
 total_with_tax = total_tax + total_price
 
 print("SUBTOTAL: "+ to_usd(total_price)) 
